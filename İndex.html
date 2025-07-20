@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Anılyazılım.58</title>
+  <style>
+    body { font-family: Arial; background: #f0f0f0; padding: 20px; }
+    h1 { color: #444; }
+    .code-box {
+      background: #fff; border: 1px solid #ccc; padding: 15px;
+      margin-bottom: 15px; border-radius: 8px; cursor: pointer;
+      box-shadow: 0 0 5px #bbb;
+      font-size: 18px;
+    }
+    .explanation {
+      display: none; margin-top: 10px; color: #222;
+      background: #f9f9f9; padding: 10px; border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      font-size: 20px;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gel yeğen Anıl kod öğretsin🇹🇷</h1>
+
+  <div class="code-box" onclick="toggle('htmlExp')">
+    <b>HTML Başlık</b>
+    <pre>&lt;h1&gt;Merhaba Dünya&lt;/h1&gt;</pre>
+    <div id="htmlExp" class="explanation">
+      HTML başlık etiketi. Sayfanın ana başlığıdır. H1 en büyüğüdür.
+    </div>
+  </div>
+<div class="code-box" onclick="toggle('linkExp')">
+    <b>HTML Link</b>
+    <pre>&lt;a href="https://google.com"&gt;Google'a Git&lt;/a&gt;</pre>
+    <div id="linkExp" class="explanation">
+      <code>&lt;a&gt;</code> etiketi bağlantı verir. Kullanıcıyı başka siteye götürür.
+    </div>
+  </div>
+
+  <div class="code-box" onclick="toggle('imgExp')">
+    <b>HTML Görsel</b>
+    <pre>&lt;img src="resim.jpg" alt="Açıklama"&gt;</pre>
+    <div id="imgExp" class="explanation">
+      Sayfaya görsel eklemek için kullanılır. <code>src</code> görselin yoludur.
+    </div>
+  </div>
+
+  <div class="code-box" onclick="toggle('cssExp')">
+    <b>CSS Renk</b>
+    <pre>h1 { color: blue; }</pre>
+    <div id="cssExp" class="explanation">
+      Bu kod h1 başlığını mavi yapar. CSS görünüm ayarları için kullanılır.
+    </div>
+  </div>
+
+  <div class="code-box" onclick="toggle('jsExp')">
+    <b>JavaScript Uyarı</b>
+    <pre>alert("Merhaba!");</pre>
+    <div id="jsExp" class="explanation">
+      Sayfa açıldığında uyarı verir. JavaScript, sayfayı dinamik yapar.
+    </div>
+  </div>
+
+  <div class="code-box" onclick="toggle('jsBtnExp')">
+    <b>JS Buton Tıklama</b>
+    <pre>&lt;button onclick="alert('Tıklandı!')"&gt;Tıkla&lt;/button&gt;</pre>
+    <div id="jsBtnExp" class="explanation">
+[20/7 02:58] ChatGPT: Butona basıldığında uyarı verir. JS ile etkileşim örneği.
+      <br><br>
+      <!-- Gerçek butonu göstermek için -->
+      <button onclick="alert('Tıklandı!')">Tıkla</button>
+    </div>
+  </div>
+
+  <div class="code-box" onclick="toggle('pyExp')">
+    <b>Python Yazdır</b>
+    <pre>print("Anılyazılım")</pre>
+    <div id="pyExp" class="explanation">
+      Python dilinde ekrana metin yazdırmak için kullanılır.
+    </div>
+  </div>
+
+  <script>
+    function toggle(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
